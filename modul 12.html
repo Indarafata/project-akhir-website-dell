@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Modul 12</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scal=1">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+
+            body{
+                font font-family: Arial, Helvetica, sans-serif;
+            }
+            header{
+                background-color: #000;;
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+            }
+            nav{
+                float:left;
+                width: 150px;
+                height: 350px;
+                background: rgb(152, 152, 160);
+                padding:25px;
+            }
+            nav ul{
+                list-style: none;
+                padding: 0;
+            }
+            aricle{
+                float: left;
+                padding: 20px;
+                width: 70%;
+                background-color: violet;
+                height: 300px;
+            }
+            section:after{
+                content:"";
+                display: table;
+                clear: both;
+            }
+            footer{
+                background-color: black;
+                padding:10px;
+                text-align: center;
+                color: white;
+            }
+            @media(max-width: 600px){
+                nav, article{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h3>CSS Layout Float</h3>
+        <p>Penulis Artikel adalah orang atau individu yang bertindak dalam pengarangan sebuah tulisan, penggabungan beberapa kata menjadi kalimat yang menarik dan enak dibaca sehingga membuat pembaca dapat mengetahui apa yang tidak mereka ketahui sebelumnya.</p>
+        <p>Sebuah artikel berasal dari pengalaman seseorang, imajinasi, pengetahuan umum atau penelitian ilmiah. </p>
+
+        <header>
+            <h3>Cities</h3>
+        </header>
+
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#">Surabaya</a></li>
+                    <li><a href="#">Malang</a></li>
+                    <li><a href="#">Gresik</a></li>
+                </ul>
+            </nav>
+
+            <articel>
+                <h1>Surabaya</h1>
+                <p>Surabaya adalah kota pahlawan, banyak hal menarik yg bisa kita jumpai disurabaya, salah satunya tukang parkir yang hanya muncul untuk minta dibayar lalu menghilang saat dibutuhkan</p>
+            </articel>
+        </section>
+
+        <footer>
+            <p>ini footer</p>
+        </footer>
+    </body>
+</html>

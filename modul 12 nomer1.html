@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS Website Layout</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                margin= 0;
+            }
+            .header{
+                background-color: black;
+                padding: 20px;
+                text-align: center;
+                color: white;
+            }
+            .topnav{
+                overflow: hidden;
+                background-color: darkgoldenrod;
+            }
+            .topnav a{
+                float: left;
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            .topnav a:hover{
+                background-color:pink;
+                color: darkblue;
+            }
+            .column{
+                float:left;
+                width:33.33%;
+                padding:15px;
+            }
+            .row:after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+            @media screen and (max-width:600px){
+                .column{
+                    width:100px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Header</h1>
+            <p>WDW Modul 12</p>
+        </div>
+
+        <div class="topnav">
+            <a href="#">Link1</a>
+            <a href="#">Link2</a>
+            <a href="#">Link3</a>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <h2>Column</h2>
+                <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+            </div>
+
+            <div class="column">
+                <h2>Column</h2>
+                <p>Z Y X W V U T S R Q P O N M L K J I H G F E D C B A</p>
+            </div>
+        </div>
+    </body>

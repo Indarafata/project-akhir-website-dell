@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="jquery-3.5.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#flip").click(function(){
+                    $("#panel1").slideDown("fast");
+                });
+            });
+        </script>
+        <style>
+            #panel, #flip{
+                padding: 10px;
+                text-align: center;
+                background-color: tomato;
+                border: solid 1px #c3c3c3;
+            }
+            #panel1{
+                padding: 50px;
+                display: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="flip">klik here</div>
+        <div id="panel1">hello</div>
+    </body>
+</html>

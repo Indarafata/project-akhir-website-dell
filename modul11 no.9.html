@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="jquery-3.5.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("#div1").fadeIn(100);
+                    $("#div2").fadeIn("slow");
+                    $("#div3").fadeIn("500");
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+<button>Klik</button>
+
+        <div id="div1" style="widows: 80px; height: 80px; display: none; background-color:purple;"></div><br>
+        <div id="div2" style="widows: 80px; height: 80px; display: none; background-color:blue;"></div><br>
+        <div id="div3" style="widows: 80px; height: 80px; display: none; background-color:yellow;"></div><br>
+
+    </body>
+</html>
